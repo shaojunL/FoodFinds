@@ -5,16 +5,52 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Login</h1>
-    <input placeholder="email" id="emailInput"> 
-    <input placeholder="password" id="passwordInput">
-    <button id="signInButton">Sign In With Email</button>
-    <h3 id="signInText"></h3>
-    <h3>sign in with google</h3>
-    <button id="mainButton">Back to Main</button>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg " style="background-color:rgb(250, 145, 58);">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color:rgb(255, 255, 255); padding:10px;">
+            <!-- logo-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 2 17 15">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+            <!--company name-->
+            FoodFinds
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html" style="color:rgb(255, 255, 255); font-size:17px;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./generator.html" style="color:rgb(255, 255, 255); font-size:17px;">Recipe Generator</a>
+            </li>
+            </ul>
+
+            <!--sign in and login buttons-->
+            <nav class="navbar" style="background-color:rgb(250, 145, 58);">
+                <form class="container-fluid justify-content-start">
+                <button class="btn btn-light me-2" type="button" id="signIn">Sign In</button>
+                <button class="btn btn-sm btn-outline-light" type="button" id="createAccount">Create Account</button>
+                </form>
+            </nav>
+        </div>
+        </div>
+    </nav>
+    <div id="signInSection" style="display: flex; flex-direction:column; padding-left: 30%; padding-right: 30%;">
+        <h3 style="text-align: center; padding-top: 10px;">Sign in</h3>
+        <input placeholder="Email" id="emailInput" style="height: 40px; margin-top: 10px; margin-bottom: 10px; border-radius: 8px;"> 
+        <input placeholder="Password" id="passwordInput" style="height: 40px; margin-bottom: 10px; border-radius: 8px; margin-bottom: 5px;">
+        <button id="signInButton" style="height: 40px; border-radius: 8px;">Sign In</button>
+        <div id="signInMessage" style="opacity: 0.6;">
+            <h5 id="signInText" style="background-color: rgb(255, 0, 0); margin-top: 10px; border-radius: 2px;"></h5>
+        </div>
+    </div>
     <script src='signIn.js' type="module"></script>
 </body>
 </html>

@@ -1,11 +1,12 @@
 import { auth } from "./auth.js"; 
 import { onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
-const mainButtonEl = document.getElementById("mainButton"); 
 const signInButton = document.getElementById("signInButton");
 const emailInputEl = document.getElementById("emailInput"); 
 const passwordInputEl = document.getElementById("passwordInput");  
 const signInText = document.getElementById("signInText"); 
+const createAccountHeaderButton = document.getElementById("createAccount"); 
+const signInHeaderButton = document.getElementById("signIn"); 
 
 signInText.innerText = ""; 
 
@@ -33,8 +34,12 @@ const monitorAuthState = async () => {
 }
 monitorAuthState(); 
 
-signInButton.addEventListener("click", loginEmailPassword);  
-
-mainButtonEl.addEventListener("click", ()=>{
-    window.location.replace("./index.html")
+createAccountHeaderButton.addEventListener("click", ()=> {
+    window.location.replace("./createAccount.html"); 
 })
+
+signInHeaderButton.addEventListener("click", ()=> {
+    window.location.replace("./signIn.html"); 
+})
+
+signInButton.addEventListener("click", loginEmailPassword);  
