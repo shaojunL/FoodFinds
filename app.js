@@ -7,6 +7,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebas
 const firebaseConfig = {
     apiKey: "AIzaSyDRDqUSpHuN9glqowoMkdrdI0WKc-MwGKs",
     authDomain: "techfest-hackathon-2024.firebaseapp.com",
+    databaseURL: "https://techfest-hackathon-2024-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "techfest-hackathon-2024",
     storageBucket: "techfest-hackathon-2024.appspot.com",
     messagingSenderId: "152257098874",
