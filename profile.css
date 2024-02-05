@@ -1,6 +1,6 @@
 #userInfo{
     margin:90px 150px;
-    padding: 40px 60px;
+    padding: 50px 80px;
     background-color: rgb(236, 236, 236);
     border-radius: 50px;
 }
@@ -11,7 +11,7 @@ h3{
 
 #emailAddress{
     background-color: white;
-    padding:7px 15px;
+    padding:10px 15px;
     border-radius: 10px;
     position:absolute;
     left:65px;
@@ -24,7 +24,7 @@ h3{
 
 .thing{
     position: absolute;
-    top:7.2px;
+    top:11px;
 }
 
 .empty{
@@ -33,6 +33,7 @@ h3{
 
 #dietInfo{
     font-size: 23px;
+    margin:15px 0px 20px 0px;
 }
 
 #emptyStyle{
@@ -40,10 +41,10 @@ h3{
 }
 .userInput{
     background-color: white;
-    padding: 7px 15px 5px 15px;
+    padding: 11px 17px 2px 15px;
     border-radius: 10px;
     position:absolute;
-    left: 200px;
+    left: 182px;
     font-size: 16.5px;
 }
 

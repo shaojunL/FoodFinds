@@ -1,5 +1,5 @@
-import { auth } from "./auth.js"; 
 import { onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { auth } from "./auth.js";
 
 const signInButton = document.getElementById("signInButton");
 const emailInputEl = document.getElementById("emailInput"); 
@@ -17,7 +17,7 @@ export const loginEmailPassword = async () => {
         let userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword); 
     } catch (error) {
         //show invalid password error 
-        signInText.innerText = "Wrong email or password."; 
+        signInText.innerText = "Wrong email or password!"; 
     }
 }
 
