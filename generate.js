@@ -4,13 +4,15 @@ const openai = new OpenAI({
   api_key: process.env.OPENAI_API_KEY
 });
 
-const recipe1 = async (ingredients) => {
+const recipe1 = async (ingredients, cuisine, dietary) => {
 
     system_role_content = "You are a talented cook."
   
     prompt = `Create a recipe based on the following ingredients ${ingredients}.
         Do not use any other ingredients except salt, pepper and olive oil. Not all ingredients have to be used.
-        Your answer should start with "Recipe: " and the name of the recipe
+        Recipe should be of ${cuisine} cuisine. Recipe must adhere to deitary restriction of ${dietary}.
+        Your answer should start with "Recipe: " and the name of the recipe. 
+        If not food related words given in ingredients, suggest any dish instead of using above ingredients listed.
       `
   
     messages = [
