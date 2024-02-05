@@ -1,5 +1,5 @@
-import { auth } from "./auth.js"; 
-import { createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { auth } from "./auth.js";
  
 const createAccountButtonEl = document.getElementById("createAccountButton"); 
 const emailInputEl = document.getElementById("emailInput");
@@ -16,10 +16,10 @@ const createAccount = async() => {
     try {
         const userCredential = await createUserWithEmailAndPassword(auth, loginEmail, loginPassword); 
         messageTextEl.innerText = "Account successfully created."; 
-        messageTextEl.style.backgroundColor = "green";
+        messageTextEl.style.color = "green";
     } catch (error) { 
         messageTextEl.innerText = "Failed to create account."; 
-        messageTextEl.style.backgroundColor = "red";
+        messageTextEl.style.color = "red";
     }
 }
 

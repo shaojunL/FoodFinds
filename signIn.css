@@ -1,0 +1,43 @@
+#signInSection{
+    padding: 45px 90px;
+    width: auto; 
+    margin: 80px 25%;
+    background-color:rgba(235, 235, 235, 0.897);
+    border-radius: 50px;
+}
+
+#inputBoxes{
+    display: flex; 
+    flex-direction:column; 
+}
+
+h3{
+    padding:5px 10px;
+}
+
+.inputs{
+    height: 40px; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    padding: 10px 14px;
+    border-radius: 10px;
+    border:none;
+}
+
+#signInButton{
+    background-color: rgb(255, 138, 43);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    padding:6px 15px;
+    margin: 10px 0px;
+}
+
+#signInMessage{
+    color: rgba(255, 0, 0, 0.929);
+}
+
+#signInText{
+    margin:10px 3.5px;
+    font-size: 17.5px;
+}

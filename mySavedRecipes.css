@@ -1,0 +1,34 @@
+#pic{
+    width: auto; 
+    margin: 90px 150px 40px 150px;
+    background-color:rgba(235, 235, 235, 0.897);
+    padding:30px 60px;
+    border-radius: 30px;
+
+}
+
+form button{
+    background-color: rgb(255, 138, 43);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    padding:6px 15px;
+}
+
+#form{
+    background:url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg);
+    background-size:cover;
+    display: grid;
+}
+
+#recipe{
+    width: auto; 
+    margin: 10px 150px;
+    background-color:rgba(235, 235, 235, 0.897);
+    padding:30px 60px;
+    border-radius: 30px;
+}
+
+.empty{
+    height:80px;
+}
