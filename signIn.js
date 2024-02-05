@@ -24,8 +24,8 @@ export const loginEmailPassword = async () => {
 const monitorAuthState = async () => {
     onAuthStateChanged(auth, user => {
         if (user) {
-            if (window.location.pathname !== "/home.html") { 
-                window.location.replace("./home.html"); 
+            if (window.location.pathname !== "/profile.html") { 
+                window.location.replace("./profile.html"); 
             }
         } else {
 

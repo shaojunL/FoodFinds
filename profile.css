@@ -1,0 +1,48 @@
+#userInfo{
+    margin:90px 150px;
+    padding: 40px 60px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+#emailAddress{
+    background-color: white;
+    padding:7px 15px;
+    border-radius: 10px;
+    position:absolute;
+    left:65px;
+    font-size: 17.5px
+}
+
+.emailAddressInfo{
+    position: relative;
+}   
+
+/*.thing{
+    position: absolute;
+    top:7.2px;
+}*/
+
+.empty{
+    height:60px;
+}
+
+#dietInfo{
+    font-size: 23px;
+}
+
+#emptyStyle{
+    height: 10px;
+}
+/*.userInput{
+    background-color: white;
+    padding:7px 15px;
+    border-radius: 10px;
+    position:absolute;
+    left:65px;
+    font-size: 17.5px
+}*/
