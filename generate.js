@@ -37,6 +37,14 @@ const recipe1 = async (ingredients) => {
 
     const imageUrl = await createMealImage(actual)
 
+    var data = []
+    data[0] = actual
+    data[1] = foodl
+    data[2] = instructionsl
+    data[3] = imageUrl
+
+    return data
+
 }
 
 const createMealImage = async (title) => {
