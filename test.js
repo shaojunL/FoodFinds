@@ -12,7 +12,7 @@ async function main(foods, cuisine, dietary) {
     }
   }
   
-main(foods);
+main(foods, cuisine, dietary);
   
 
 

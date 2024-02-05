@@ -13,6 +13,7 @@ const recipe1 = async (ingredients, cuisine, dietary) => {
         Recipe should be of ${cuisine} cuisine. Recipe must adhere to deitary restriction of ${dietary}.
         Your answer should start with "Recipe: " and the name of the recipe. 
         If not food related words given in ingredients, suggest any dish instead of using above ingredients listed.
+        If no proper cuisine given, use chinese cuisine.
       `
   
     messages = [
