@@ -1,7 +1,12 @@
 const {recipe1} = require('./generate');
-foods = 'nkjhfgmh' //change to ingredients input
-cuisine = 'kjgfvbjuyfvb' //change to cuisine input
-dietary = 'none' //change to dietary restriction input
+
+var selectedDiet = document.getElementById("selectDietaryRestrictions").value;
+var cuisineInput = document.getElementById("cuisine").value;
+var ingredientsInput = document.getElementById("ingredients").value;
+
+foods = selectedDiet //change to ingredients input
+cuisine = cuisineInput //change to cuisine input
+dietary = ingredientsInput //change to dietary restriction input
 
 async function main(foods, cuisine, dietary) {
     try {
