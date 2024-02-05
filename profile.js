@@ -15,8 +15,8 @@ const monitorAuthState = async () => {
     onAuthStateChanged(auth, user => {
         if (user) {
             renderPage(user); 
-            if (window.location.pathname !== "/home.html") { 
-                window.location.replace("./home.html");      
+            if (window.location.pathname !== "/profile.html") { 
+                window.location.replace("./profile.html");      
             }
         } else {
            window.location.replace("./index.html"); 
