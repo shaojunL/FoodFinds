@@ -22,10 +22,10 @@ h3{
     position: relative;
 }   
 
-/*.thing{
+.thing{
     position: absolute;
     top:7.2px;
-}*/
+}
 
 .empty{
     height:60px;
@@ -38,11 +38,29 @@ h3{
 #emptyStyle{
     height: 10px;
 }
-/*.userInput{
+.userInput{
     background-color: white;
-    padding:7px 15px;
+    padding: 7px 15px 5px 15px;
     border-radius: 10px;
     position:absolute;
-    left:65px;
-    font-size: 17.5px
-}*/
+    left: 200px;
+    font-size: 16.5px;
+}
+
+.mb-3{
+    position:absolute;
+    top:300px;
+}
+
+.profileButton{
+    background-color: rgb(255, 138, 43);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    padding:6px 15px;
+}
+
+input{
+    border:none;
+}
+

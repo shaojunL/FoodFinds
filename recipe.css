@@ -1,0 +1,21 @@
+#pic{
+    width: auto; 
+    margin: 90px 150px;
+    background-color:rgba(235, 235, 235, 0.897);
+    padding:80px;
+    border-radius: 50px;
+}
+
+form button{
+    background-color: rgb(255, 138, 43);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    padding:6px 15px;
+}
+
+#form{
+    background:url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg);
+    background-size:cover;
+    display: grid;
+}
