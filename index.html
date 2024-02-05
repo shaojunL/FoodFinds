@@ -30,6 +30,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="./generator.html" style="color:rgb(255, 255, 255); font-size:17px;">Recipe Generator</a>
               </li>
+              <li class="nav-item" id="myProfileBanner">
+                <a class="nav-link active" aria-current="page" href="./home.html" style="color:rgb(255, 255, 255); font-size:17px;">My Profile</a>
+              </li>
+              <li class="nav-item" id="mySavedRecipesBanner">
+                <a class="nav-link active" aria-current="page" href="./home.html" style="color:rgb(255, 255, 255); font-size:17px;">My Saved Recipes</a>
+              </li>
             </ul>
 
             <!--sign in and login buttons-->
@@ -42,12 +48,57 @@
           </div>
         </div>
       </nav>
+      <div class="parent">
+        <div class="pic"></div>
+          <div class="intro">
+            <h1>FoodFinds</h1>
+            <h3>Want to make some delicious homemade food, but don't have any ideas? We are here to help! Tell us what ingredients you have in your fridge and we'll suggest some reccipes, customized to your dietary preferences.</h3>
+            <h5>maybe insert a screenshot of our final product here! ^_^</h5> 
+          </div>
+      </div>  
+      <div class="empty"></div>
 
-      <div class="intro">
-        <h1>Recipe Generator</h1>
-        <h3>Want to make some delicious homemade food, but don't have any ideas? We are here to help. Tell us what ingredients you have in your fridge and we'll suggest some reccipes, customized to your dietary preferences.</h3>
-        <h5>maybe insert a screenshot of our final product here! ^_^</h5>
-      </div>
+        <!--slideshow of steps on how to use our app maybe? :)-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./RecipeGeneratorPage.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-text">How to Use our Website :)</h5>
+                <p class="carousel-text">i js put these as placeholders first</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./RecipeGeneratorPage.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-text">Second slide label</h5>
+                <p class="carousel-text">Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./RecipeGeneratorPage.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-text">Third slide label</h5>
+                <p class="carousel-text">Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      
 
       <!-- footer -->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="padding:20px;">
