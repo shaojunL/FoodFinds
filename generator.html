@@ -64,10 +64,14 @@
             </h2>
             <br />
             </div>
+            <!--autofill-->
+            <div id="autofill" style="visibility: hidden">
+              <input type="checkbox" id="autofillButton"> Autofill
+            </div>
             <!--select option-->
             <div class="mb-3">
                 <label for="selectDietaryRestrictions" class="form-label">Select the Dietary Restrictions the Dish Must Have</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" id="selectDietaryRestrictions">
                     <option selected>None</option>
                     <option value="1">Halal</option>
                     <option value="2">Vegetarian/Vegan</option>
@@ -84,7 +88,7 @@
             <!--third qn-->
             <div class="mb-3">
             <label for="ingredients" class="form-label">Input Any Ingredients You Would Like in Your Dish</label>
-            <input class="form-control" id="cuisine">
+            <input class="form-control" id="ingredients">
             </div>
             <br />
             <button onclick="submitForm()">Submit</button>

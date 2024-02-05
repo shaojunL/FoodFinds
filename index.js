@@ -7,6 +7,8 @@ const mySavedRecipesBannerEl = document.getElementById("mySavedRecipesBanner");
 const createAccountEl = document.getElementById("createAccount"); 
 const signInEl = document.getElementById("signIn"); 
 
+console.log(mySavedRecipesBannerEl)
+
 myProfileBannerEl.style.visibility = "hidden"; 
 mySavedRecipesBannerEl.style.visibility = "hidden"; 
 
