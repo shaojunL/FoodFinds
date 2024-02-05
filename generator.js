@@ -6,6 +6,9 @@ const myProfileBannerEl = document.getElementById("myProfileBanner");
 const mySavedRecipesBannerEl = document.getElementById("mySavedRecipesBanner"); 
 const createAccountEl = document.getElementById("createAccount"); 
 const signInEl = document.getElementById("signIn"); 
+// export let dietaryRestrictions = document.getElementById('selectDietaryRestrictions').value;
+// export let cuisine = document.getElementById('cuisine').value;
+// export let ingredients = document.getElementById('ingredients').value;
 
 myProfileBannerEl.style.visibility = "hidden"; 
 mySavedRecipesBannerEl.style.visibility = "hidden"; 

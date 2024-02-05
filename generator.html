@@ -90,7 +90,14 @@
             <button onclick="submitForm()">Submit</button>
         </div>
     </form>
-      
+    <script>
+      document.getElementById('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+        
+          window.location.href = 'recipe.html';
+      });
+    </script>
+    
  
       <!-- footer -->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="padding:20px;">

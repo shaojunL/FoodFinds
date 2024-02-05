@@ -1,5 +1,7 @@
 const {recipe1} = require('./generate');
 
+import{dietaryRestrictions,cuisine,ingredients} from "./generator"
+
 /*
 var selectedDiet = document.getElementById("selectDietaryRestrictions").value;
 var cuisineInput = document.getElementById("cuisine").value;
@@ -24,12 +26,12 @@ async function main(foods, cuisine, dietary) {
   
 function submitForm() {
   // Get values from the input fields
-  var selectedDiet = document.getElementById("selectDietaryRestrictions").value;
-  var cuisineInput = document.getElementById("cuisine").value;
-  var ingredientsInput = document.getElementById("ingredients").value;
+  // var selectedDiet = document.getElementById("selectDietaryRestrictions").value;
+  // var cuisineInput = document.getElementById("cuisine").value;
+  // var ingredientsInput = document.getElementById("ingredients").value;
 
   // Call the main function with the form inputs
-  document.getElementById("output-content").innerHTML = main(ingredientsInput, cuisineInput, selectedDiet);
+  document.getElementById("output-content").innerHTML = main(ingredients, cuisine, dietaryRestrictions);
 
   // Redirect to the output.html page
   window.location.href = "recipe.html";
