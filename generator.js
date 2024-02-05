@@ -2,7 +2,7 @@ import { app } from "./app.js";
 import { auth } from "./auth.js"; 
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"; 
-
+import { submitForm } from "./test.js";
 const database = getDatabase(app); 
 
 const myProfileBannerEl = document.getElementById("myProfileBanner"); 
@@ -14,6 +14,7 @@ const checkBoxEl = document.getElementById("autofillButton");
 export const dietaryRestrictionSelectEl = document.getElementById("selectDietaryRestrictions"); 
 export const cuisinePreferenceSelectEl = document.getElementById("cuisine");
 export const ingredientsSelectEl = document.getElementById("ingredient");  
+const submitButtonEl = document.getElementById("submit-button"); 
 
 myProfileBannerEl.style.visibility = "hidden"; 
 mySavedRecipesBannerEl.style.visibility = "hidden"; 
@@ -92,3 +93,7 @@ function clearForm() {
 async function logout() {
     await signOut(auth);
 }
+
+submitButtonEl.addEventListener("click", () => {
+    submitForm(); 
+})
