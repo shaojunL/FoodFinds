@@ -61,8 +61,10 @@
         <div class="emailAddressInfo">
             <h3 class="thing">Dietary Restrictions</h3>
             
-            <div class="userInput" id="dietaryRestrictionInfo">
-                <input placeholder="Select Dietary Restrictions" id="dietaryRestrictionInput">
+            <div id="dietaryRestrictionInfo"><!--class="userInput" -->
+                <div class="userInput">
+                    <input placeholder="Select Dietary Restrictions" id="dietaryRestrictionInput">
+                </div>
                 <div class="mb-3" id="dietaryRestrictionInput">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>None</option>
@@ -75,16 +77,18 @@
                 </div> 
             </div>
         </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
         <div class="emailAddressInfo">
             <h3 class="thing">Cuisine Preferences</h3>
             <div class="userInput" id="cuisinePreferenceInfo">
                 <input  placeholder="Select Cuisine Preferences" id="cuisinePreferenceInput">
             </div>
         </div> 
-        
-        <button id="saveButton">Save</button>
+        <div class="empty"></div>
+        <button class="profileButton" id="saveButton">Save</button>
         <br />   
-        <button id="editInfo">Edit Information</button>
+        <button class="profileButton" id="editInfo">Edit Information</button>
         <h3 id="savedInfo"></h3>
     </div>
 

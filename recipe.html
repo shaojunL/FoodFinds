@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFinds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="recipe.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg " style="background-color:rgb(250, 145, 58);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:rgb(255, 255, 255); padding:10px;">
+            <!-- logo-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 2 17 15">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+              <!--company name-->
+            FoodFinds
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html" style="color:rgb(255, 255, 255); font-size:17px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./generator.html" style="color:rgb(255, 255, 255); font-size:17px;">Recipe Generator</a>
+              </li>
+              <li class="nav-item" id="myProfileBanner">
+                <a class="nav-link active" aria-current="page" href="./profile.html" style="color:rgb(255, 255, 255); font-size:17px;">My Profile</a>
+              </li>
+              <li class="nav-item" id="mySavedRecipesBanner">
+                <a class="nav-link active" aria-current="page" href="./mySavedRecipes.html" style="color:rgb(255, 255, 255); font-size:17px;">My Saved Recipes</a>
+              </li>
+            </ul>
+
+            <!--sign in and login buttons-->
+            <nav class="navbar" style="background-color:rgb(250, 145, 58);">
+                <form class="container-fluid justify-content-start">
+                  <button class="btn btn-light me-2" type="button" id="signIn">Sign In</button>
+                  <button class="btn btn-sm btn-outline-light" type="button" id="createAccount">Create Account</button>
+                </form>
+              </nav>
+          </div>
+        </div>
+      </nav>
+
+      
+      <!--form grey box-->
+    <form id="form">
+        <!--to insert background pic-->
+        <div id="pic">
+            <!--insert generated recipe here (AI API)-->
+        </div>
+    </form>
+      
+ 
+      <!-- footer -->
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="padding:20px;">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Techfest Hackathon Team 38
+          <!--balloon lol-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+      </p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="generator.js" type="module"></script>
+</body>
+</html>
